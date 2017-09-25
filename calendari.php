@@ -1,7 +1,18 @@
+<?php 
+	$semana=1;
+	for($dia=1;$dia<=date('t');$dia++) {
+		$dia_semana=date('N' , strotine(date('Y-m').'-'.$dia));
+		$calendario[$semana][$dia_semana] =$dia;
+		if ($dia_semana ==7) { $semana++;};
+	}
+?>
+
+
+echo date('t'); ?>
+
+
 
 <!DOCTYPE html>
-
-
 <head>
 </head>
 
